@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "compile": "pug -w --pretty src/Pages/main.pug --out ./public"
+        "compile": "pug -w --pretty src/Pages/menu.pug --out ./public"
     },
     "repository": {
         "type": "git",

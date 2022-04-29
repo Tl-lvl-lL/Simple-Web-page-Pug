@@ -8,7 +8,6 @@ body {
     font-family: "Lato", sans-serif;
     color: #333333;
     margin: 0;
-    /* font-size: 14px; */
 }
 
 h1,
@@ -97,10 +96,11 @@ header a {
 }
 
 .contenido {
+    height: calc(100vh - 200px);
     display: flex;
     align-items: center;
-    justify-content: center;
 }
+
 .caja {
     max-width: 400px;
     margin: 50px 20px;
@@ -122,12 +122,52 @@ header a {
     padding: 20px;
 }
 
-footer ul {
+ul {
     margin-left: auto;
     display: flex;
     align-content: flex-end;
+    list-style-type: none;
+    padding-inline-start: 0 !important;
 }
-footer li {
+li {
     list-style: none;
     margin: 0 20px;
+}
+
+aside {
+    display: flex;
+    height: 100%;
+    width: 25%;
+    background-color: #eef1f8;
+    align-items: center;
+    padding-left: 60px;
+    align-items: flex-start;
+}
+nav h3 {
+    margin-bottom: 10px;
+    margin-top: 150px;
+}
+aside ul {
+    margin: 0;
+    flex-flow: column nowrap;
+}
+aside ul li {
+    margin: 30px auto 30px 0px;
+    font-weight: 900;
+    font-size: 18px;
+    color: #3c538c;
+}
+
+section {
+    display: flex;
+    height: 100%;
+    width: 75%;
+    padding: 150px 200px 0px 100px;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+section p {
+    font-size: 24px;
+    margin: 25px 0;
 }
