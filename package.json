@@ -1,0 +1,25 @@
+{
+    "name": "platzi-games-pug-publico",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "compile": "pug -w --pretty src/Pages/main.pug --out ./public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/daywalkerhn/platzi-games-pug-publico.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/daywalkerhn/platzi-games-pug-publico/issues"
+    },
+    "homepage": "https://github.com/daywalkerhn/platzi-games-pug-publico#readme",
+    "dependencies": {
+        "pug": "^3.0.2",
+        "pug-cli": "^1.0.0-alpha6"
+    }
+}

@@ -1,0 +1,17 @@
+extends ../templates/landing.pug
+
+block content
+	include ../mixins/box_creator.pug
+	section.intro 
+		.intro__imagen: img(src="../images/imagen.png", alt="")
+		.intro__contenido
+			h2 Titulo Principal
+			p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est unde accusamus tempora ipsam natus, fugiat voluptates doloremque, iure perspiciatis delectus eos ex esse et ratione quaerat omnis dicta. Expedita, quaerat.Quam numquam id autem molestias aliquam repellat totam error magni eveniet consectetur voluptas.
+				span Voluptatibus natus deserunt veritatis quia, mollitia provident voluptate harum quasi cupiditate exercitationem laudantium placeat quae iste dolor nobis illum nulla dolorem minima.
+			a.boton leer
+	main.contenido 
+		-var contador=1
+		while contador <= 3 
+			+boxCreator("../images/imagen.png",contador++,"default")
+
+
